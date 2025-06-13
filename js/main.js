@@ -330,21 +330,15 @@ class HeroTextEffect {
     }
 
     startAnimation() {
-        // Fade in and pulse Bryce Falcon text
-        setTimeout(() => {
-            this.bryceFalconText.style.opacity = '1';
-            this.bryceFalconText.style.transition = 'opacity 2s ease-in-out';
-            this.pulseText();
-            // Start typing effect for line 1 after Bryce Falcon text fades in
-            setTimeout(() => {
-                this.typeText(this.line1, this.line1.textContent, 50, () => {
-                    // Start typing effect for line 2 after line 1 is done
-                    setTimeout(() => {
-                        this.typeText(this.line2, this.line2.textContent, 50);
-                    }, 500);
-                });
-            }, 1000);
-        }, 500);
+        // Fade in and pulse Bryce Falcon text immediately
+        this.bryceFalconText.style.opacity = '1';
+        this.bryceFalconText.style.transition = 'opacity 2s ease-in-out';
+        this.pulseText();
+        // Start typing effect for line 1 immediately
+        this.typeText(this.line1, this.line1.textContent, 50, () => {
+            // Start typing effect for line 2 immediately after line 1 is done
+            this.typeText(this.line2, this.line2.textContent, 50);
+        });
     }
 
     pulseText() {
