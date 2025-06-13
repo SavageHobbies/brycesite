@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://brycefalcon.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block access to admin areas and private files
+Disallow: /private/
+Disallow: /admin/
+Disallow: /*.log$
+Disallow: /temp/
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# SEO optimization
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit/
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
