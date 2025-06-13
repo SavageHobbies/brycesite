@@ -446,8 +446,8 @@ body {
 
 /* Aether Arrival Entrance Animation */
 #aether-arrival {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
 }
 
 #aether-arrival.entrance {
@@ -456,9 +456,9 @@ body {
 }
 
 @keyframes aetherEntrance {
-  0% { opacity: 0; transform: translateY(-30px) scale(0.8); text-shadow: 0 0 5px rgba(255, 0, 0, 0.3); color: #ff0000; }
-  50% { opacity: 0.7; transform: translateY(0) scale(1.1); text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 0, 0, 0.6); color: #ff0000; }
-  100% { opacity: 1; transform: translateY(0) scale(1); text-shadow: 0 0 5px rgba(0, 191, 255, 0.7), 0 0 10px rgba(0, 191, 255, 0.5); color: #00bfff; }
+  0% { transform: translateY(-30px) scale(0.8); text-shadow: 0 0 5px rgba(255, 0, 0, 0.3); color: #ff0000; }
+  50% { transform: translateY(0) scale(1.1); text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 0, 0, 0.6); color: #ff0000; }
+  100% { transform: translateY(0) scale(1); text-shadow: 0 0 5px rgba(0, 191, 255, 0.7), 0 0 10px rgba(0, 191, 255, 0.5); color: #00bfff; }
 }
 
 #aether-arrival.entrance {
