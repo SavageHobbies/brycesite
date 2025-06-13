@@ -450,6 +450,65 @@ body {
   visibility: visible;
 }
 
+/* Mobile Optimizations */
+@media (max-width: 480px) {
+  /* Hide Bryce Falcon text in hero section on mobile */
+  #bryce-falcon-text {
+    display: none;
+  }
+  
+  /* Reduce header logo size significantly on mobile to prevent overlap */
+  header a.font-cinzel-decorative {
+    font-size: 1rem;
+  }
+  
+  /* Adjust hero section text sizes and spacing */
+  #aether-arrival h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  #aether-arrival p {
+    font-size: 0.8rem;
+  }
+  
+  /* Adjust hero section container to prevent overlap */
+  #hero .container {
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  /* Adjust hero section height for smaller screens */
+  #hero {
+    height: 70vh;
+  }
+  
+  /* Adjust section padding for better mobile spacing */
+  section {
+    padding: 1.5rem 0;
+  }
+  
+  /* Reduce font sizes in book section for better readability */
+  #book h2 {
+    font-size: 1.5rem;
+  }
+  
+  #book p {
+    font-size: 0.8rem;
+  }
+  
+  /* Stack reviews in a single column with proper spacing */
+  #reviews .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Adjust footer layout for mobile */
+  footer .grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
 #aether-arrival.entrance {
   visibility: visible;
   animation: aetherEntrance 2s ease-out forwards;
