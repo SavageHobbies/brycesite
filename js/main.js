@@ -431,4 +431,15 @@ window.addEventListener('load', () => {
     new AITextEffects();
     new HeroTextEffect();
     new SubscribePopup();
+    
+    // Trigger entrance animation for Aether Arrival text after a short delay
+    setTimeout(() => {
+        const aetherArrival = document.getElementById('aether-arrival');
+        if (aetherArrival) {
+            aetherArrival.classList.add('entrance');
+            console.log('Aether Arrival animation triggered');
+        } else {
+            console.log('Aether Arrival element not found');
+        }
+    }, 500);
 });

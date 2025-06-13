@@ -1,5 +1,5 @@
 /* Disable all animations but preserve hover transitions, except for specific effects */
-*:not(.grand-effect) {
+*:not(.grand-effect):not(.entrance) {
   animation-name: none !important;
 }
 /* Modern Reset and Base Styles */
@@ -24,14 +24,7 @@ body {
   font-display: swap;
 }
 
-/* Custom Font Loading */
-@font-face {
-  font-family: 'BryFal';
-  src: url('../fonts/bryfal.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+/* Custom Font Loading - Removed BryFal font as it is no longer used */
 
 /* Core Typography */
 .font-orbitron {
@@ -43,7 +36,7 @@ body {
 }
 
 .font-slayers {
-  font-family: 'BryFal', 'Orbitron', 'Arial Black', sans-serif;
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
   font-weight: normal;
   letter-spacing: 2px;
   font-display: swap;
@@ -441,12 +434,39 @@ body {
 }
 
 @keyframes grandEntrance {
-  0% { transform: scale(0.5); opacity: 0; }
-  50% { transform: scale(1.1); opacity: 0.7; }
+  0% { transform: scale(0.1); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 0.6; }
   100% { transform: scale(1); opacity: 1; }
 }
 
 @keyframes pulseEffect {
-  0%, 100% { transform: scale(1); text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2); }
-  50% { transform: scale(1.05); text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4); }
+  0%, 60%, 100% { transform: scale(1); text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2); }
+  30% { transform: scale(1.08); text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4); }
+}
+
+/* Aether Arrival Entrance Animation */
+#aether-arrival {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#aether-arrival.entrance {
+  visibility: visible;
+  animation: aetherEntrance 2s ease-out forwards;
+}
+
+@keyframes aetherEntrance {
+  0% { opacity: 0; transform: translateY(-30px) scale(0.8); text-shadow: 0 0 5px rgba(255, 0, 0, 0.3); color: #ff0000; }
+  50% { opacity: 0.7; transform: translateY(0) scale(1.1); text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 0, 0, 0.6); color: #ff0000; }
+  100% { opacity: 1; transform: translateY(0) scale(1); text-shadow: 0 0 5px rgba(0, 191, 255, 0.7), 0 0 10px rgba(0, 191, 255, 0.5); color: #00bfff; }
+}
+
+#aether-arrival.entrance {
+  visibility: visible;
+  animation: aetherEntrance 2s ease-out forwards, aetherPulse 4s ease-in-out 2s infinite;
+}
+
+@keyframes aetherPulse {
+  0%, 100% { transform: scale(1); text-shadow: 0 0 5px rgba(0, 191, 255, 0.7), 0 0 10px rgba(0, 191, 255, 0.5); color: #00bfff; }
+  50% { transform: scale(1.05); text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 0, 0, 0.6); color: #ff0000; }
 }
