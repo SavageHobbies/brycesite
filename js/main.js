@@ -432,14 +432,12 @@ window.addEventListener('load', () => {
     new HeroTextEffect();
     new SubscribePopup();
     
-    // Trigger entrance animation for Aether Arrival text after a short delay
-    setTimeout(() => {
-        const aetherArrival = document.getElementById('aether-arrival');
-        if (aetherArrival) {
-            aetherArrival.classList.add('entrance');
-            console.log('Aether Arrival animation triggered');
-        } else {
-            console.log('Aether Arrival element not found');
-        }
-    }, 500);
+    // Entrance class for Aether Arrival text is now hardcoded in HTML, no need for delayed addition
+    const aetherArrival = document.getElementById('aether-arrival');
+    if (aetherArrival && !aetherArrival.classList.contains('entrance')) {
+        aetherArrival.classList.add('entrance');
+        console.log('Aether Arrival animation ensured');
+    } else if (!aetherArrival) {
+        console.log('Aether Arrival element not found');
+    }
 });
