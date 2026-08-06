@@ -19,11 +19,27 @@ Allow: /js/
 Allow: /images/
 Allow: /fonts/
 
-# SEO optimization
+# SEO & AI Search Optimization
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+# AI Search & Citation Bots
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 # Social media crawlers
