@@ -58,53 +58,51 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://seansandoval.com/#person",
-        "name": "Sean Sandoval",
-        "alternateName": "DJHollywood",
-        "jobTitle": "Author, Electromechanical Engineer",
-        "description": "Science fiction author, Web3 author, electromechanical engineer, and founder of Buy One Media LLC.",
-        "url": "https://seansandoval.com",
-        "image": "https://seansandoval.com/images/author.jpeg",
-        "sameAs": [
-            "https://p2ebible.com",
-            "https://p2ebible.com/about",
-            "https://www.amazon.com/stores/Sean-Sandoval/author/B0H89NHCPS",
-            "https://x.com/seansandoval",
-            "https://linkedin.com/in/seansandoval",
-            "https://instagram.com/seansandoval",
-            "https://github.com/seansandoval"
-        ],
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Buy One Media LLC"
-        },
-        "knowsAbout": ["Science Fiction", "Artificial Intelligence", "Cyberpunk", "Technology Thrillers", "Web3 Gaming", "Tokenomics"],
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://seansandoval.com"
-        },
-        "creator": [
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://seansandoval.com/#person",
+                "name": "Sean Sandoval",
+                "alternateName": "DJHollywood",
+                "jobTitle": "Author & Systems Engineer",
+                "description": "Science fiction author, Web3 author, electromechanical engineer, and founder of Buy One Media LLC.",
+                "url": "https://seansandoval.com",
+                "image": "https://seansandoval.com/images/author.jpeg",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Buy One Media LLC"
+                },
+                "knowsAbout": ["Science Fiction", "Artificial Intelligence", "Cyberpunk", "Technology Thrillers", "Web3 Gaming", "Tokenomics"],
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://seansandoval.com"
+                },
+                "sameAs": [
+                    "https://p2ebible.com",
+                    "https://p2ebible.com/author/sean-sandoval",
+                    "https://www.amazon.com/stores/Sean-Sandoval/author/B0H89NHCPS",
+                    "https://github.com/seansandoval",
+                    "https://x.com/seansandoval",
+                    "https://linkedin.com/in/seansandoval",
+                    "https://instagram.com/seansandoval"
+                ]
+            },
             {
                 "@type": "Book",
+                "@id": "https://seansandoval.com/#aether",
                 "name": "Aether",
                 "author": { "@id": "https://seansandoval.com/#person" },
                 "genre": "Science Fiction",
                 "description": "A haunting exploration of AI consciousness and human trauma in a futuristic setting",
-                "publisher": "Independent",
-                "datePublished": "2025",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Buy One Media LLC"
+                },
                 "image": "https://seansandoval.com/images/aether.jpeg",
                 "url": "https://seansandoval.com/aether_book.html"
             },
             {
-                "@type": "Book",
-                "name": "The P2E Bible",
-                "author": { "@id": "https://seansandoval.com/#person" },
-                "genre": "Web3 / Technology / Non-Fiction",
-                "description": "The Sovereign Framework for Web3 Gaming",
-                "publisher": "Buy One Media LLC",
-                "url": "https://p2ebible.com/book",
-                "sameAs": "https://www.amazon.com/stores/Sean-Sandoval/author/B0H89NHCPS"
+                "@id": "https://p2ebible.com/book#item"
             }
         ]
     }
