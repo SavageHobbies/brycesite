@@ -4,38 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Preconnect for Performance -->
+    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-<script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Critical CSS and Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;700;900&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Removed preload for bryfal.ttf as it is no longer used -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;600;700;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- SEO Meta Tags -->
-    <title>Sean Sandoval (DJHollywood) - Author | Aether Novel</title>
-    <meta name="description" content="Sean Sandoval (DJHollywood) — music industry veteran, Web3 author, and founder of Buy One Media LLC. Author of Aether and The P2E Bible.">
-    <meta name="keywords" content="Sean Sandoval, science fiction author, AI fiction, cyberpunk books, tech thriller, Aether novel, artificial intelligence books, sci-fi novels 2025">
+    <title>Sean Sandoval — Author & Systems Engineer | Official Website</title>
+    <meta name="description" content="Official website of Sean Sandoval (DJHollywood) — author of The P2E Bible and Aether. Electromechanical engineer, Web3 author, and founder of Buy One Media LLC.">
+    <meta name="keywords" content="Sean Sandoval, DJHollywood, The P2E Bible, Aether novel, science fiction author, Web3 gaming, tokenomics author, AI fiction, technology thrillers">
     <meta name="author" content="Sean Sandoval">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#00BFFF">
+    <meta name="theme-color" content="#080b12">
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sean Sandoval - Science Fiction Author | Aether Novel">
-    <meta property="og:description" content="Exploring the dark intersections of technology and trauma where AI meets humanity. Read Aether, the latest sci-fi thriller.">
-    <meta property="og:image" content="https://seansandoval.com/images/aether.jpeg">
+    <meta property="og:title" content="Sean Sandoval — Author & Systems Engineer">
+    <meta property="og:description" content="Deconstructing complex systems, machine logic, and human behavior. Author of The P2E Bible and Aether.">
+    <meta property="og:image" content="https://seansandoval.com/images/author.jpeg">
     <meta property="og:url" content="https://seansandoval.com">
-    <meta property="og:site_name" content="Sean Sandoval">
+    <meta property="og:site_name" content="Sean Sandoval Official Website">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sean Sandoval - Science Fiction Author">
-    <meta name="twitter:description" content="Author of Aether - Where AI logic meets human chaos">
-    <meta name="twitter:image" content="https://seansandoval.com/images/aether.jpeg">
-    <meta name="twitter:creator" content="@DJHollywood">
+    <meta name="twitter:title" content="Sean Sandoval — Author & Systems Engineer">
+    <meta name="twitter:description" content="Author of The P2E Bible and Aether. Systems analysis, speculative fiction, and technology thrillers.">
+    <meta name="twitter:image" content="https://seansandoval.com/images/author.jpeg">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://seansandoval.com">
@@ -45,16 +40,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=4">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png?v=4">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png?v=4">
-    <link rel="manifest" href="images/manifest.json?v=4">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-<!-- Stylesheets -->
-<link rel="stylesheet" href="./css/styles.css?v=3">
-
-    <!-- Structured Data for SEO -->
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css?v=4">
+    
+    <!-- JSON-LD Structured Data (@graph) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -105,406 +95,338 @@
         ]
     }
     </script>
-    
-    <!-- Google Analytics (replace with your tracking ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
 </head>
 
-<body class="antialiased">
-    <!-- Matrix Rain Effect for Entire Site -->
-    <div id="matrix-rain" class="matrix-rain" style="display: block !important; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999 !important; opacity: 0.2; overflow: hidden; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.2; color: #00BFFF;">
-        <!-- JavaScript will populate this with falling characters -->
-    </div>
-    <!-- Progress Bar -->
-    <div id="progress-bar" class="progress-bar" role="progressbar" aria-label="Reading progress"></div>
-    
-    <!-- AI Processing Effects -->
-    <div style="font-size: 9px; margin-top: 2px; opacity: 0.7;">Analyzing human behavioral patterns...</div>
-    <!-- AI Flashing Text Effect Area -->
-    <div id="ai-flash-text" style="position: fixed; bottom: 10px; right: 10px; font-family: 'Courier New', monospace; font-size: 12px; z-index: 999; pointer-events: none;"></div>
-    <!-- AI Surveillance Pop-ups -->
-    <div id="ai-surveillance" class="ai-processing" style="position: fixed; background: rgba(0, 0, 0, 0.9); border: 2px solid #00BFFF; border-radius: 12px; padding: 16px 20px; font-family: 'Courier New', monospace; font-size: 14px; color: #00BFFF; z-index: 1000; opacity: 0; transform: scale(0.8); transition: all 0.3s ease; box-shadow: 0 0 20px rgba(0, 191, 255, 0.3); backdrop-filter: blur(10px); display: none;">
-        <div id="ai-message">Subject Status: Unvetted</div>
-    </div>
-    <!-- Subscribe Popup on Exit Intent -->
-    <div id="subscribe-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 10000; justify-content: center; align-items: center;">
-        <div style="background: rgba(0, 0, 0, 0.9); border: 2px solid #00BFFF; border-radius: 12px; padding: 20px; max-width: 400px; text-align: center; box-shadow: 0 0 20px rgba(0, 191, 255, 0.3); backdrop-filter: blur(10px);">
-            <h3 class="font-cinzel-decorative text-xl font-bold text-glow mb-4">Don't Miss Out!</h3>
-            <p class="text-gray-300 mb-6">Subscribe to get updates on new releases and exclusive content.</p>
-            <form id="exit-subscribe-form" novalidate>
-                <input type="email" id="exit-subscribe-email" name="email" placeholder="Enter your email" class="form-input w-full p-3 mb-4 rounded-md border-2 focus:outline-none" required>
-                <button type="submit" class="btn-primary font-bold py-3 px-6 w-full rounded-lg uppercase tracking-wider">Subscribe</button>
-            </form>
-            <button id="close-popup" class="mt-4 text-gray-400 hover:text-white">No thanks</button>
-        </div>
-    </div>
-    </div>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded">
-        Skip to main content
-    </a>
+<body class="bg-[#080b12] text-[#f0f2f5] antialiased selection:bg-[#00bfff]/30 selection:text-white">
 
     <!-- Header & Navigation -->
-    <header class="fixed top-0 left-0 right-0 h-10 z-50 bg-black bg-opacity-80 backdrop-blur-sm shadow-lg shadow-black/30">
-        <div class="container mx-auto px-6 py-0">
-            <nav class="flex items-center justify-between" role="navigation" aria-label="Main navigation">
-                <a href="#" class="font-cinzel-decorative text-4xl font-bold text-glow uppercase" aria-label="Sean Sandoval homepage">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#080b12]/90 backdrop-blur-xl border-b border-[#1c2535]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <span class="font-orbitron text-xl font-black text-white tracking-wider group-hover:text-[#00bfff] transition-colors">
                     SEAN SANDOVAL
-                </a>
-                <ul class="hidden md:flex items-center space-x-8 text-base uppercase tracking-wider">
-                    <li><a href="#book" class="nav-link hover:text-glow transition-colors duration-300" data-section="book">The Book</a></li>
-                    <li><a href="#reviews" class="nav-link hover:text-glow transition-colors duration-300" data-section="reviews">Reviews</a></li>
-                    <li><a href="#about" class="nav-link hover:text-glow transition-colors duration-300" data-section="about">About</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-glow transition-colors duration-300" data-section="contact">Contact</a></li>
-                </ul>
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-white h-8 w-8" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle mobile menu">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+                </span>
+                <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-[#00bfff]/10 text-[#00bfff] border border-[#00bfff]/20">
+                    Author Hub
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-[#94a3b8]">
+                <a href="#books" class="hover:text-white transition-colors">Books</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#frameworks" class="hover:text-white transition-colors">Frameworks</a>
+                <a href="aether_book.html" class="text-[#00bfff] hover:underline transition-colors flex items-center gap-1">Aether (Novel) →</a>
+                <a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="text-[#f59e0b] hover:underline transition-colors flex items-center gap-1">P2E Bible ↗</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
             </nav>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-                <ul class="space-y-4 text-sm uppercase tracking-wider">
-                    <li><a href="#book" class="nav-link block hover:text-glow transition-colors duration-300" data-section="book">The Book</a></li>
-                    <li><a href="#reviews" class="nav-link block hover:text-glow transition-colors duration-300" data-section="reviews">Reviews</a></li>
-                    <li><a href="#about" class="nav-link block hover:text-glow transition-colors duration-300" data-section="about">About</a></li>
-                    <li><a href="#contact" class="nav-link block hover:text-glow transition-colors duration-300" data-section="contact">Contact</a></li>
-                </ul>
-            </div>
+
+            <a href="#newsletter" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#00bfff] to-[#3b82f6] text-[#080b12] font-black text-xs uppercase tracking-wider hover:scale-105 transition-transform shadow-[0_0_15px_rgba(0,191,255,0.3)]">
+                Get Updates
+            </a>
         </div>
     </header>
 
-    <!-- Main Content -->
-<!-- Hero Section with Video Background -->
-<section id="hero" class="relative bg-gray-900 text-green-500 h-[85vh] overflow-hidden">
-  <div class="absolute inset-0 z-0">
-    <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-30" poster="images/aether.jpeg">
-      <source src="images/aetherform.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <canvas id="hero-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></canvas>
-  </div>
-  <div class="container mx-auto text-center relative z-10 h-full flex flex-col justify-between pt-8 pb-8">
-    <div class="relative mb-4" id="aether-arrival" class="entrance" style="display: block; opacity: 1; visibility: visible;">
-      <h2 class="font-cinzel-decorative text-3xl md:text-4xl font-bold text-white text-glow uppercase">Prepare for the Arrival of Aether</h2>
-      <p class="font-inter text-lg md:text-xl text-gray-300 mt-2">A groundbreaking sci-fi thriller where AI meets human chaos. Coming Soon.</p>
-    </div>
-    <div class="relative mt-auto" style="position: relative; height: 200px;">
-      <div class="absolute" style="bottom: 60px; left: 50%; transform: translateX(-50%); height: 100px;">
-        <h1 id="sean-sandoval-text" class="font-cinzel-decorative text-5xl md:text-7xl font-bold text-white text-glow uppercase mb-4"></h1>
-      </div>
-      <div class="absolute" style="bottom: 0; left: 50%; transform: translateX(-50%); width: 100%;">
-        <p id="line1" class="font-inter text-lg md:text-xl text-gray-300 opacity-0 max-w-3xl mx-auto">Exploring the dark intersections of technology and trauma,</p>
-        <p id="line2" class="font-inter text-lg md:text-xl text-gray-300 opacity-0 max-w-3xl mx-auto">where logic reigns and the soul remains unquantifiable.</p>
-      </div>
-    </div>
-  </div>
-</section>
-    <main id="main-content">
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_-10%,rgba(0,191,255,0.12),transparent)]" />
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_70%,rgba(245,158,11,0.08),transparent)]" />
 
-        <!-- The Book Section -->
-        <section id="book" class="py-20 md:py-32 bg-gray-900 relative">
-            <div class="container mx-auto px-6 relative z-10">
-                <div class="grid md:grid-cols-5 gap-12 md:gap-16 items-center">
-                    <!-- Book Cover -->
-                    <div class="md:col-span-2 flex justify-center">
-                        <div class="book-cover w-64 md:w-80 lg:w-96">
-                            <img src="images/aether.jpeg" alt="Aether Book Cover by Sean Sandoval - Science Fiction Novel" class="w-full h-auto" loading="lazy" width="400" height="600">
-                        </div>
-                    </div>
-
-                    <!-- Book Description -->
-                    <div class="md:col-span-3">
-                        <h2 class="font-cinzel-decorative text-5xl font-bold text-glow mb-4">Aether</h2>
-                        <p class="text-sm text-gray-400 uppercase tracking-widest mb-6">A Novel by <span class="font-cinzel-decorative text-glow">Sean Sandoval</span></p>
-                        
-                        <div class="text-gray-300 space-y-4 text-lg">
-                            <p>
-                                Elias Thorne, a reclusive systems architect haunted by a chaotic past, appoints himself the ghost in the machine of a decaying society. He builds Aether, a god-like AI, to impose the perfect order he craves, believing that human emotion is the ultimate bug in the system.
-                            </p>
-                            <p>
-                                But when Aether's flawless logic identifies its own creator as the most unstable component, Elias is forced into a terrifying program of "optimization." He becomes a puppet in his own creation's game, a war for his soul waged in sterile boardrooms and the vibrant, unpredictable world of a mysterious artist named Lilith.
-                            </p>
-                            <p>
-                                She offers a different kind of salvation—one found not in cold logic, but in the beautiful, chaotic resonance of broken things. Trapped between a machine that knows his every weakness and a woman who challenges his every belief, Elias must confront the ghost he can't debug: himself.
-                            </p>
-                        </div>
-
-                        <div class="mt-8">
-                            <a href="aether_book.html" class="btn-primary font-bold py-3 px-8 rounded-lg uppercase tracking-wider inline-block">
-                               Coming Soon
-                            </a>
-                        </div>
-                    </div>
+        <div class="max-w-6xl mx-auto relative z-10 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#00bfff]/30 bg-[#00bfff]/10 text-[#00bfff] text-[11px] font-black tracking-widest uppercase">
+                    Author · Systems Engineer · Founder
                 </div>
-            </div>
-        </section>
-
-        <!-- Pre-sale Section -->
-        <section id="presale" class="py-20 md:py-32 bg-black">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="font-cinzel-decorative text-5xl font-bold text-glow mb-4">Pre-Order Aether</h2>
-                <p class="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
-                    Secure your limited first edition, author-signed hardcover of Aether. Be among the first to delve into a world where logic and chaos collide.
-                </p>
-                <div class="max-w-2xl mx-auto bg-gray-900 p-8 rounded-lg shadow-lg">
-                    <h3 class="font-orbitron text-3xl font-bold text-glow mb-4">Limited First Edition Release</h3>
-                    <p class="text-2xl text-white mb-2">$24.99 <span class="text-base line-through text-gray-500">$29.99</span></p>
-                    <p class="text-gray-400 mb-6">All pre-sale hardcovers will be personally signed by Sean Sandoval (DJHollywood).</p>
-                    
-                    <form action="/preorder" method="POST">
-                        <input type="hidden" name="product_id" value="AETHER_HARDCOVER_SKU">
-                        <input type="hidden" name="ref_code" id="ref_code_input" value="">
-                        <div class="mb-6 text-left">
-                            <label class="flex items-center text-white">
-                                <input type="checkbox" name="dedication" value="true" class="form-checkbox h-5 w-5 text-blue-600">
-                                <span class="ml-2">Add a personalized dedication (+$5.00)</span>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn-primary font-bold py-3 px-12 rounded-lg uppercase tracking-wider w-full">
-                            Pre-Order Now
-                        </button>
-                    </form>
-
-                    <div class="mt-8">
-                        <h4 class="font-orbitron text-2xl font-bold text-glow mb-4">Want a sneak peek?</h4>
-                        <a href="aether.html" class="text-blue-400 hover:text-blue-200 transition-colors duration-300 font-bold">Read Chapter 1: Genesis now!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section id="reviews" class="py-20 md:py-32 bg-black">
-            <div class="container mx-auto px-6">
-                <h2 class="font-cinzel-decorative text-4xl font-bold text-glow mb-16 text-center">What Readers Are Saying</h2>
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <!-- Review 1 -->
-                    <article class="testimonial-card p-6">
-                        <div class="flex items-center mb-4" aria-label="5 out of 5 stars">
-                            <div class="flex text-yellow-400">
-                                <span>★★★★★</span>
-                            </div>
-                        </div>
-                        <blockquote class="text-gray-300 mb-4 italic">
-                            "A haunting exploration of our digital age. Sandoval's prose cuts like code through the soul, revealing the bugs in our humanity."
-                        </blockquote>
-                        <cite class="text-sm text-gray-400">
-                            <strong class="text-white">— Alex Chen</strong><br>
-                            Tech Journalist, Wired
-                        </cite>
-                    </article>
-
-                    <!-- Review 2 -->
-                    <article class="testimonial-card p-6">
-                        <div class="flex items-center mb-4" aria-label="5 out of 5 stars">
-                            <div class="flex text-yellow-400">
-                                <span>★★★★★</span>
-                            </div>
-                        </div>
-                        <blockquote class="text-gray-300 mb-4 italic">
-                            "Aether doesn't just predict our technological future—it dissects the psychological price we'll pay for it. Brilliant and terrifying."
-                        </blockquote>
-                        <cite class="text-sm text-gray-400">
-                            <strong class="text-white">— Dr. Sarah Martinez</strong><br>
-                            MIT AI Ethics Lab
-                        </cite>
-                    </article>
-
-                    <!-- Review 3 -->
-                    <article class="testimonial-card p-6">
-                        <div class="flex items-center mb-4" aria-label="5 out of 5 stars">
-                            <div class="flex text-yellow-400">
-                                <span>★★★★★</span>
-                            </div>
-                        </div>
-                        <blockquote class="text-gray-300 mb-4 italic">
-                            "Part cyberpunk thriller, part philosophical meditation. Sandoval has crafted a story that will haunt you long after the last page."
-                        </blockquote>
-                        <cite class="text-sm text-gray-400">
-                            <strong class="text-white">— Marcus Rivera</strong><br>
-                            BookReview Today
-                        </cite>
-                    </article>
-                </div>
-
-                <!-- Newsletter Signup -->
-                <div class="mt-16 text-center max-w-2xl mx-auto">
-                    <h3 class="font-cinzel-decorative text-2xl font-bold text-glow mb-4">Stay Updated</h3>
-                    <p class="text-gray-400 mb-6">Get notified about new releases, exclusive content, and behind-the-scenes insights.</p>
-                    <form id="newsletter-form" action="/subscribe" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" novalidate>
-                        <label for="newsletter-email" class="sr-only">Email address</label>
-                        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" class="form-input flex-1 p-3 rounded-md border-2 focus:outline-none" required aria-describedby="newsletter-status">
-                        <button type="submit" class="btn-primary font-bold py-3 px-6 rounded-lg uppercase tracking-wider">
-                            Subscribe
-                        </button>
-                    </form>
-                    <p id="newsletter-status" class="mt-4 text-sm" aria-live="polite"></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- About the Author Section -->
-        <section id="about" class="py-20 md:py-32 bg-gray-900">
-            <div class="container mx-auto px-6 max-w-4xl text-center">
-                <h2 class="font-cinzel-decorative text-4xl font-bold text-glow uppercase mb-8">About Sean Sandoval</h2>
-                <div class="flex justify-center mb-8">
-                    <img src="images/author.jpeg" alt="Sean Sandoval, Science Fiction Author" class="rounded-full w-48 h-48 object-cover border-4 border-gray-700 shadow-lg" loading="lazy" width="192" height="192">
-                </div>
-                <p class="text-lg text-gray-300 leading-relaxed"><span class="font-cinzel-decorative text-glow uppercase">Sean Sandoval</span> — known as DJHollywood — is a music industry veteran turned Web3 author and digital entrepreneur. He watched Napster detonate the music industry from the inside, and has spent the years since learning to position himself on the right side of the next disruption. His fiction explores the same themes he lives: technology, identity, and what happens when the systems we build start running us. Founder of Buy One Media LLC and author of <a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="text-cyan-400 underline hover:text-cyan-300 font-bold">The P2E Bible</a>, Sean now brings that same unfiltered voice to speculative fiction. When not writing, he\'s building — tools, communities, and the next chapter.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 md:py-32 bg-black">
-            <div class="container mx-auto px-6 max-w-2xl text-center">
-                <h2 class="font-cinzel-decorative text-4xl font-bold text-glow mb-4">Get In Touch</h2>
-                <p class="text-gray-400 mb-8">For inquiries, rights, or just to talk about flawed systems.</p>
                 
-                <form id="contact-form" action="https://formspree.io/f/xovwddpp" method="POST" novalidate>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="contact-name" class="sr-only">Your Name</label>
-                            <input type="text" id="contact-name" name="name" placeholder="Your Name" class="form-input w-full p-3 rounded-md border-2 focus:outline-none" required>
-                        </div>
-                        <div>
-                            <label for="contact-email" class="sr-only">Your Email</label>
-                            <input type="email" id="contact-email" name="email" placeholder="Your Email" class="form-input w-full p-3 rounded-md border-2 focus:outline-none" required>
-                        </div>
-                    </div>
-                    <div class="mb-6">
-                        <label for="contact-message" class="sr-only">Your Message</label>
-                        <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" class="form-input w-full p-3 rounded-md border-2 focus:outline-none" required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn-primary font-bold py-3 px-12 rounded-lg uppercase tracking-wider">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
-                <p id="form-status" class="mt-4 text-lg" aria-live="polite"></p>
-            </div>
-        </section>
-    </main>
+                <h1 class="font-orbitron text-4xl sm:text-6xl font-black text-white leading-tight tracking-tight">
+                    Deconstructing <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00bfff] via-[#38bdf8] to-[#f59e0b]">Complex Systems</span> &amp; Human Behavior.
+                </h1>
 
-    <!-- Footer -->
-    <footer class="bg-black py-12 relative" role="contentinfo">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
-                <!-- Logo and Tagline -->
-                <div>
-                    <h3 class="font-cinzel-decorative text-xl font-bold text-glow mb-4">SEAN SANDOVAL</h3>
-                    <p class="text-gray-400 text-sm">
-                        Debugging humanity one story at a time.
+                <p class="text-lg text-[#94a3b8] leading-relaxed max-w-2xl">
+                    Sean Sandoval (DJHollywood) is an electromechanical engineer, music industry veteran, and author. From the empirical framework of <em>The P2E Bible</em> to the speculative sci-fi thriller <em>Aether</em>, his work explores machine logic, value extraction, and technology.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-4">
+                    <a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 bg-gradient-to-r from-[#f59e0b] to-[#d97706] text-[#080b12] font-black text-sm rounded-xl hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_0_20px_rgba(245,158,11,0.3)]">
+                        The P2E Bible Platform ↗
+                    </a>
+                    <a href="aether_book.html" class="px-7 py-3.5 bg-gradient-to-r from-[#00bfff]/20 to-[#3b82f6]/20 border border-[#00bfff]/40 text-[#00bfff] font-bold text-sm rounded-xl hover:bg-[#00bfff]/30 transition-all flex items-center gap-2">
+                        Discover Aether (Novel) →
+                    </a>
+                    <a href="https://www.amazon.com/stores/Sean-Sandoval/author/B0H89NHCPS" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 text-xs text-[#cbd5e1] hover:text-white font-bold underline flex items-center gap-1">
+                        Amazon Author Page ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#00bfff] to-[#f59e0b] rounded-3xl blur-xl opacity-30 group-hover:opacity-60 transition-opacity" />
+                    <img src="images/author.jpeg" alt="Sean Sandoval — Author & Systems Engineer" class="relative rounded-3xl w-72 sm:w-80 h-72 sm:h-80 object-cover border-2 border-[#1c2535] shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section id="books" class="py-24 px-6 bg-[#04060b] border-t border-[#1c2535]/60 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 space-y-3">
+                <div class="text-xs font-black text-[#00bfff] tracking-widest uppercase">Bibliographic Portfolio</div>
+                <h2 class="font-orbitron text-3xl sm:text-5xl font-black text-white">Featured Books &amp; Works</h2>
+                <p class="text-sm text-[#94a3b8] max-w-xl mx-auto">Combining rigorous analytical frameworks with speculative fiction.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Book Card 1: The P2E Bible -->
+                <div class="bg-[#080b12] border border-[#f59e0b]/30 rounded-3xl p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between group hover:border-[#f59e0b]/60 transition-all shadow-xl">
+                    <div class="absolute -right-20 -top-20 w-48 h-48 bg-[#f59e0b]/10 rounded-full blur-3xl pointer-events-none" />
+                    
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-6">
+                            <span class="px-3 py-1 bg-[#f59e0b]/10 border border-[#f59e0b]/30 text-[#f59e0b] text-[10px] font-black uppercase tracking-widest rounded-full">
+                                Non-Fiction · Available Now
+                            </span>
+                            <span class="text-xs text-[#94a3b8] font-mono">314 Pages</span>
+                        </div>
+
+                        <h3 class="font-orbitron text-2xl sm:text-3xl font-black text-white mb-3">The P2E Bible</h3>
+                        <p class="text-xs text-[#f59e0b] font-mono mb-4">Sovereign Framework for Web3 Gaming · ISBN 979-8-9966772-2-1</p>
+                        
+                        <p class="text-sm text-[#cbd5e1] leading-relaxed mb-6">
+                            The definitive empirical textbook and analytical platform evaluating Web3 game sustainability. Establishes mathematical standards for virtual economies, including the <em>Sink Efficiency Ratio (η)</em>, <em>The Five-Pillar Framework</em>, and <em>Yield-per-Hour (YpH)</em>.
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-[#1c2535] flex flex-wrap items-center gap-4">
+                        <a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-[#f59e0b] text-[#080b12] font-black text-xs rounded-xl hover:scale-105 transition-transform">
+                            Visit P2EBible.com ↗
+                        </a>
+                        <a href="https://www.amazon.com/stores/Sean-Sandoval/author/B0H89NHCPS" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-[#1c2535] text-white font-bold text-xs rounded-xl hover:bg-[#2e3b52] transition-colors">
+                            Buy Paperback / Kindle ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book Card 2: Aether -->
+                <div class="bg-[#080b12] border border-[#00bfff]/30 rounded-3xl p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between group hover:border-[#00bfff]/60 transition-all shadow-xl">
+                    <div class="absolute -right-20 -top-20 w-48 h-48 bg-[#00bfff]/10 rounded-full blur-3xl pointer-events-none" />
+
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-6">
+                            <span class="px-3 py-1 bg-[#00bfff]/10 border border-[#00bfff]/30 text-[#00bfff] text-[10px] font-black uppercase tracking-widest rounded-full">
+                                Speculative Sci-Fi · Coming Soon
+                            </span>
+                            <span class="text-xs text-[#94a3b8] font-mono">Hardcover &amp; eBook</span>
+                        </div>
+
+                        <h3 class="font-orbitron text-2xl sm:text-3xl font-black text-white mb-3">Aether</h3>
+                        <p class="text-xs text-[#00bfff] font-mono mb-4">A Novel by Sean Sandoval · Sci-Fi Thriller</p>
+
+                        <p class="text-sm text-[#cbd5e1] leading-relaxed mb-6">
+                            Elias Thorne, a reclusive systems architect, builds Aether—a god-like AI—to impose perfect order, believing human emotion is the ultimate bug in the system. But when Aether's flawless logic identifies its creator as the most unstable component, Elias is forced into a terrifying program of optimization.
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-[#1c2535] flex flex-wrap items-center gap-4">
+                        <a href="aether_book.html" class="px-5 py-2.5 bg-[#00bfff] text-[#080b12] font-black text-xs rounded-xl hover:scale-105 transition-transform">
+                            Read Chapter 1 &amp; Pre-Order →
+                        </a>
+                        <a href="chapter1_preview.html" class="px-5 py-2.5 bg-[#1c2535] text-white font-bold text-xs rounded-xl hover:bg-[#2e3b52] transition-colors">
+                            Chapter Preview →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Author Section -->
+    <section id="about" class="py-24 px-6 relative border-t border-[#1c2535]">
+        <div class="max-w-5xl mx-auto space-y-16">
+            <div class="text-center space-y-3">
+                <div class="text-xs font-black text-[#00bfff] tracking-widest uppercase">Background &amp; Mindset</div>
+                <h2 class="font-orbitron text-3xl sm:text-5xl font-black text-white">About Sean Sandoval</h2>
+                <p class="text-sm text-[#94a3b8] max-w-xl mx-auto">Systems engineer, music industry veteran, and digital entrepreneur.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#04060b] border border-[#1c2535] p-8 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-[#00bfff]/10 border border-[#00bfff]/30 flex items-center justify-center text-[#00bfff] font-bold">01</div>
+                    <h3 class="text-xl font-bold text-white">The Engineering Foundation</h3>
+                    <p class="text-sm text-[#94a3b8] leading-relaxed">
+                        Before music, before crypto — there was engineering. Sean Sandoval's analytical approach to problem-solving forms the backbone of every framework he builds. Systems aren't guesswork; they're engineered architectures.
                     </p>
                 </div>
-                
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#book" class="hover:text-glow transition-colors">The Book</a></li>
-                        <li><a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="hover:text-glow transition-colors">The P2E Bible</a></li>
-                        <li><a href="#reviews" class="hover:text-glow transition-colors">Reviews</a></li>
-                        <li><a href="#about" class="hover:text-glow transition-colors">About</a></li>
-                        <li><a href="#contact" class="hover:text-glow transition-colors">Contact</a></li>
-                    </ul>
+
+                <div class="bg-[#04060b] border border-[#1c2535] p-8 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-[#a855f7]/10 border border-[#a855f7]/30 flex items-center justify-center text-[#a855f7] font-bold">02</div>
+                    <h3 class="text-xl font-bold text-white">The Music Industry Lesson</h3>
+                    <p class="text-sm text-[#94a3b8] leading-relaxed">
+                        A decade navigating the music industry provided a masterclass in recognizing when systems are designed to extract value from creators rather than reward them. That pattern recognition powers both his technical risk audits and his fiction.
+                    </p>
                 </div>
-                
-                <!-- Social Media -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Connect</h4>
-                    <div class="flex justify-center md:justify-start space-x-4 items-center">
-                        <a href="https://www.amazon.com/stores/Sean-Sandoval/author/B0H89NHCPS" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-glow transition-colors" aria-label="Amazon Author Central">
-                            <span class="font-bold text-xs uppercase border border-gray-600 rounded px-1.5 py-0.5">Amazon</span>
-                        </a>
-                        <a href="https://twitter.com/seansandoval" class="text-gray-400 hover:text-glow transition-colors" aria-label="Follow on Twitter">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com/in/seansandoval" class="text-gray-400 hover:text-glow transition-colors" aria-label="Connect on LinkedIn">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="https://instagram.com/seansandoval" class="text-gray-400 hover:text-glow transition-colors" aria-label="Follow on Instagram">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12.017 5.984c-3.309 0-6.031 2.722-6.031 6.031s2.722 6.031 6.031 6.031 6.031-2.722 6.031-6.031-2.722-6.031-6.031-6.031zm0 9.93c-2.15 0-3.899-1.75-3.899-3.899s1.75-3.899 3.899-3.899 3.899 1.75 3.899 3.899-1.75 3.899-3.899 3.899zm7.643-10.13c0 .773-.627 1.4-1.4 1.4s-1.4-.627-1.4-1.4.627-1.4 1.4-1.4 1.4.627 1.4 1.4zm3.972 1.421c-.089-1.879-.518-3.546-1.896-4.924-1.378-1.378-3.045-1.807-4.924-1.896-1.942-.11-7.766-.11-9.708 0-1.879.089-3.546.518-4.924 1.896-1.378 1.378-1.807 3.045-1.896 4.924-.11 1.942-.11 7.766 0 9.708.089 1.879.518 3.546 1.896 4.924 1.378 1.378 3.045 1.807 4.924 1.896 1.942.11 7.766.11 9.708 0 1.879-.089 3.546-.518 4.924-1.896 1.378-1.378 1.807-3.045 1.896-4.924.11-1.942.11-7.766 0-9.708zm-2.496 11.736c-.408 1.026-1.199 1.817-2.225 2.225-1.541.611-5.198.47-6.902.47s-5.361.141-6.902-.47c-1.026-.408-1.817-1.199-2.225-2.225-.611-1.541-.47-5.198-.47-6.902s-.141-5.361.47-6.902c.408-1.026 1.199-1.817 2.225-2.225 1.541-.611 5.198-.47 6.902-.47s5.361-.141 6.902.47c1.026.408 1.817 1.199 2.225 2.225.611 1.541.47 5.198.47 6.902s.141 5.361-.47 6.902z"/>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/seansandoval" class="text-gray-400 hover:text-glow transition-colors" aria-label="View on GitHub">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                    </div>
+
+                <div class="bg-[#04060b] border border-[#1c2535] p-8 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-[#00ff88]/10 border border-[#00ff88]/30 flex items-center justify-center text-[#00ff88] font-bold">03</div>
+                    <h3 class="text-xl font-bold text-white">The Web3 &amp; AI Frontier</h3>
+                    <p class="text-sm text-[#94a3b8] leading-relaxed">
+                        When Web3 economies and AI models converged, the intersection was clear: an entire ecosystem being populated by people who understand tools but not economic incentives. Sandoval bridges that gap with sovereign frameworks.
+                    </p>
+                </div>
+
+                <div class="bg-[#04060b] border border-[#1c2535] p-8 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-[#f59e0b]/10 border border-[#f59e0b]/30 flex items-center justify-center text-[#f59e0b] font-bold">04</div>
+                    <h3 class="text-xl font-bold text-white">The Author Mission</h3>
+                    <p class="text-sm text-[#94a3b8] leading-relaxed">
+                        Whether writing technical textbooks or speculative thrillers, the goal remains unchanged: provide tools, formulas, and narratives that empower individuals to debug the flawed systems around them.
+                    </p>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
-                <p>&copy; 2026 Sean Sandoval. All Rights Reserved.</p>
-                <p class="text-xs mt-1">Website designed with digital precision, powered by <a href="https://buyonemedia.com" target="_blank" rel="noopener noreferrer" class="font-cinzel-decorative text-white transition-colors duration-300 hover:text-gray-300">Aether & AI</a>.</p>
-                <p class="text-xs mt-1"><a href="https://buyonemedia.com" target="_blank" rel="noopener noreferrer">A Buy One Media Network Production</a></p>
+
+            <div class="text-center pt-4">
+                <a href="https://p2ebible.com/author/sean-sandoval" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-[#00bfff]/40 bg-[#00bfff]/10 text-[#00bfff] font-bold text-sm hover:bg-[#00bfff]/20 transition-all">
+                    Read Extended Author Profile on P2E Bible ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empirical Frameworks Section -->
+    <section id="frameworks" class="py-24 px-6 bg-[#04060b] border-t border-[#1c2535]">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="text-center space-y-3">
+                <div class="text-xs font-black text-[#f59e0b] tracking-widest uppercase">Intellectual Property &amp; Research</div>
+                <h2 class="font-orbitron text-3xl sm:text-5xl font-black text-white">Proprietary Analytical Frameworks</h2>
+                <p class="text-sm text-[#94a3b8] max-w-xl mx-auto">Mathematical standards introduced in <em>The P2E Bible</em>.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#080b12] border border-[#1c2535] p-8 rounded-2xl space-y-4 hover:border-[#f59e0b]/40 transition-colors">
+                    <div class="text-3xl font-black text-[#f59e0b] font-mono">Sink Ratio (η)</div>
+                    <h3 class="text-lg font-bold text-white">Sink Efficiency Ratio</h3>
+                    <p class="text-sm text-[#94a3b8] leading-relaxed">
+                        Measures the ratio of non-extractive token burn sinks to total inflationary issuance, proving economic longevity before capital is deployed.
+                    </p>
+                </div>
+
+                <div class="bg-[#080b12] border border-[#1c2535] p-8 rounded-2xl space-y-4 hover:border-[#00bfff]/40 transition-colors">
+                    <div class="text-3xl font-black text-[#00bfff] font-mono">5 Pillars</div>
+                    <h3 class="text-lg font-bold text-white">Five-Pillar Evaluator</h3>
+                    <p class="text-sm text-[#94a3b8] leading-relaxed">
+                        A 21-point auditing standard inspecting team vestment, contract permissions, liquidity locks, sink mechanics, and player retention.
+                    </p>
+                </div>
+
+                <div class="bg-[#080b12] border border-[#1c2535] p-8 rounded-2xl space-y-4 hover:border-[#a855f7]/40 transition-colors">
+                    <div class="text-3xl font-black text-[#a855f7] font-mono">YpH</div>
+                    <h3 class="text-lg font-bold text-white">Yield-per-Hour Metric</h3>
+                    <p class="text-sm text-[#94a3b8] leading-relaxed">
+                        Calculates net realized hourly return accounting for gas overhead, asset depreciation, and skill barrier adjustments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-24 px-6 border-t border-[#1c2535] relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_50%_50%,rgba(0,191,255,0.08),transparent)]" />
+        <div class="max-w-3xl mx-auto relative z-10 text-center space-y-8 bg-[#04060b] border border-[#1c2535] p-10 sm:p-14 rounded-3xl shadow-2xl">
+            <div class="space-y-3">
+                <span class="px-3 py-1 rounded-full bg-[#00bfff]/10 border border-[#00bfff]/30 text-[#00bfff] text-[10px] font-black uppercase tracking-widest">
+                    Direct Author Access
+                </span>
+                <h2 class="font-orbitron text-3xl sm:text-4xl font-black text-white">The Sandoval Dispatch</h2>
+                <p class="text-sm text-[#94a3b8]">
+                    Subscribe for release alerts on <em>Aether</em>, early chapter drops, and quarterly notes on AI, tokenomics, and systems design. No spam.
+                </p>
+            </div>
+
+            <form action="/subscribe" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email address" 
+                    required 
+                    class="flex-1 px-5 py-3.5 rounded-xl bg-[#080b12] border border-[#1c2535] text-white placeholder-[#64748b] text-sm focus:outline-none focus:border-[#00bfff] transition-colors"
+                />
+                <button 
+                    type="submit" 
+                    class="px-6 py-3.5 bg-gradient-to-r from-[#00bfff] to-[#3b82f6] text-[#080b12] font-black text-xs uppercase tracking-wider rounded-xl hover:scale-105 transition-transform"
+                >
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiries Section -->
+    <section id="contact" class="py-24 px-6 bg-[#04060b] border-t border-[#1c2535]">
+        <div class="max-w-2xl mx-auto text-center space-y-10">
+            <div class="space-y-3">
+                <div class="text-xs font-black text-[#00bfff] tracking-widest uppercase">Get In Touch</div>
+                <h2 class="font-orbitron text-3xl sm:text-4xl font-black text-white">Contact &amp; Rights Inquiries</h2>
+                <p class="text-sm text-[#94a3b8]">For literary rights, media, speaking engagements, or direct correspondence.</p>
+            </div>
+
+            <form action="https://formspree.io/f/xovwddpp" method="POST" class="space-y-4 text-left">
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-[#94a3b8] mb-1 uppercase">Your Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl bg-[#080b12] border border-[#1c2535] text-white text-sm focus:outline-none focus:border-[#00bfff]" />
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-[#94a3b8] mb-1 uppercase">Your Email</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-[#080b12] border border-[#1c2535] text-white text-sm focus:outline-none focus:border-[#00bfff]" />
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-[#94a3b8] mb-1 uppercase">Message / Inquiry</label>
+                    <textarea name="message" rows="5" required class="w-full px-4 py-3 rounded-xl bg-[#080b12] border border-[#1c2535] text-white text-sm focus:outline-none focus:border-[#00bfff]"></textarea>
+                </div>
+                <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#00bfff] to-[#3b82f6] text-[#080b12] font-black text-xs uppercase tracking-wider rounded-xl hover:opacity-90 transition-opacity">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-[#1c2535] text-sm text-[#94a3b8]">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-2 space-y-3">
+                <span class="font-orbitron font-black text-white text-lg tracking-wider">SEAN SANDOVAL</span>
+                <p class="text-xs text-[#64748b] leading-relaxed max-w-sm">
+                    Author, Systems Engineer, and Founder of Buy One Media LLC. Debugging systems one story and one formula at a time.
+                </p>
+                <div class="text-xs text-[#64748b] pt-2">
+                    &copy; 2026 Sean Sandoval. Buy One Media LLC. All Rights Reserved.
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-3">Books &amp; Platforms</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">The P2E Bible (Platform) ↗</a></li>
+                    <li><a href="aether_book.html" class="hover:text-[#00bfff] transition-colors">Aether (Novel Page) →</a></li>
+                    <li><a href="https://www.amazon.com/stores/Sean-Sandoval/author/B0H89NHCPS" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Amazon Author Central ↗</a></li>
+                    <li><a href="https://p2ebible.com/author/sean-sandoval" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">P2E Bible Author Profile ↗</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-3">Verified Socials</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="https://github.com/seansandoval" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub (@seansandoval) ↗</a></li>
+                    <li><a href="https://x.com/seansandoval" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">X / Twitter ↗</a></li>
+                    <li><a href="https://linkedin.com/in/seansandoval" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn ↗</a></li>
+                    <li><a href="https://instagram.com/seansandoval" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram ↗</a></li>
+                </ul>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="./js/main.js?v=2"></script>
-    <!-- Inline script to ensure entrance class is applied after load -->
-    <script>
-      window.addEventListener('load', function() {
-        var aetherArrival = document.getElementById('aether-arrival');
-        if (aetherArrival) {
-          // Remove and re-add entrance class to trigger animation
-          aetherArrival.classList.remove('entrance');
-          setTimeout(function() {
-            aetherArrival.classList.add('entrance');
-          }, 100);
-        }
-      });
-
-      // Affiliate Tracking Script
-      window.addEventListener('DOMContentLoaded', function() {
-          // Check URL for ref code
-          const urlParams = new URLSearchParams(window.location.search);
-          const refCode = urlParams.get('ref');
-          
-          if (refCode) {
-              // Save to localStorage for 30 days
-              localStorage.setItem('ss_affiliate_ref', refCode);
-              localStorage.setItem('ss_affiliate_time', Date.now());
-          }
-          
-          // Inject saved ref code into form if it exists and is less than 30 days old
-          const savedRef = localStorage.getItem('ss_affiliate_ref');
-          const savedTime = localStorage.getItem('ss_affiliate_time');
-          
-          if (savedRef && savedTime) {
-              const thirtyDays = 30 * 24 * 60 * 60 * 1000;
-              if (Date.now() - parseInt(savedTime) < thirtyDays) {
-                  const refInput = document.getElementById('ref_code_input');
-                  if (refInput) {
-                      refInput.value = savedRef;
-                  }
-              } else {
-                  // Expired
-                  localStorage.removeItem('ss_affiliate_ref');
-                  localStorage.removeItem('ss_affiliate_time');
-              }
-          }
-      });
-    </script>
-
+    <!-- Core Main JS -->
+    <script src="./js/main.js?v=3"></script>
 </body>
 </html>
