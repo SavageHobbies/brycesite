@@ -118,78 +118,30 @@
     </script>
 </head>
 
-<body class="antialiased">
-    <!-- Author Hub Header Banner -->
-    <div class="bg-gray-950 border-b border-gray-800 text-sm py-3.5 px-6 text-gray-300 flex items-center justify-between font-inter z-50 relative">
-        <a href="index.html" class="text-blue-400 hover:text-blue-200 font-bold flex items-center gap-1 transition-colors">
-            ← Back to Sean Sandoval Author Hub (seansandoval.com)
-        </a>
-        <span class="hidden md:inline-block text-xs uppercase tracking-widest text-gray-400 font-mono">
-            Aether Novel Pre-Order &amp; Showcase Page
-        </span>
-    </div>
-    <!-- Matrix Rain Effect for Entire Site -->
-    <div id="matrix-rain" class="matrix-rain" style="display: block !important; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999 !important; opacity: 0.2; overflow: hidden; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.2; color: #00BFFF;">
-        <!-- JavaScript will populate this with falling characters -->
-    </div>
-    <!-- Progress Bar -->
-    <div id="progress-bar" class="progress-bar" role="progressbar" aria-label="Reading progress"></div>
-    
-    <!-- AI Processing Effects -->
-    <div style="font-size: 9px; margin-top: 2px; opacity: 0.7;">Analyzing human behavioral patterns...</div>
-    <!-- AI Flashing Text Effect Area -->
-    <div id="ai-flash-text" style="position: fixed; bottom: 10px; right: 10px; font-family: 'Courier New', monospace; font-size: 12px; z-index: 999; pointer-events: none;"></div>
-    <!-- AI Surveillance Pop-ups -->
-    <div id="ai-surveillance" class="ai-processing" style="position: fixed; background: rgba(0, 0, 0, 0.9); border: 2px solid #00BFFF; border-radius: 12px; padding: 16px 20px; font-family: 'Courier New', monospace; font-size: 14px; color: #00BFFF; z-index: 1000; opacity: 0; transform: scale(0.8); transition: all 0.3s ease; box-shadow: 0 0 20px rgba(0, 191, 255, 0.3); backdrop-filter: blur(10px); display: none;">
-        <div id="ai-message">Subject Status: Unvetted</div>
-    </div>
-    <!-- Subscribe Popup on Exit Intent -->
-    <div id="subscribe-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 10000; justify-content: center; align-items: center;">
-        <div style="background: rgba(0, 0, 0, 0.9); border: 2px solid #00BFFF; border-radius: 12px; padding: 20px; max-width: 400px; text-align: center; box-shadow: 0 0 20px rgba(0, 191, 255, 0.3); backdrop-filter: blur(10px);">
-            <h3 class="font-cinzel-decorative text-xl font-bold text-glow mb-4">Don't Miss Out!</h3>
-            <p class="text-gray-300 mb-6">Subscribe to get updates on new releases and exclusive content.</p>
-            <form id="exit-subscribe-form" novalidate>
-                <input type="email" id="exit-subscribe-email" name="email" placeholder="Enter your email" class="form-input w-full p-3 mb-4 rounded-md border-2 focus:outline-none" required>
-                <button type="submit" class="btn-primary font-bold py-3 px-6 w-full rounded-lg uppercase tracking-wider">Subscribe</button>
-            </form>
-            <button id="close-popup" class="mt-4 text-gray-400 hover:text-white">No thanks</button>
-        </div>
-    </div>
-    </div>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded">
-        Skip to main content
-    </a>
-
     <!-- Header & Navigation -->
-    <header class="fixed top-0 left-0 right-0 h-10 z-50 bg-black bg-opacity-80 backdrop-blur-sm shadow-lg shadow-black/30">
-        <div class="container mx-auto px-6 py-0">
-            <nav class="flex items-center justify-between" role="navigation" aria-label="Main navigation">
-                <a href="#" class="font-cinzel-decorative text-4xl font-bold text-glow uppercase" aria-label="Sean Sandoval homepage">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#080b12]/90 backdrop-blur-xl border-b border-[#1c2535]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <span class="font-orbitron text-xl font-black text-white tracking-wider group-hover:text-[#00bfff] transition-colors">
                     SEAN SANDOVAL
-                </a>
-                <ul class="hidden md:flex items-center space-x-8 text-base uppercase tracking-wider">
-                    <li><a href="#book" class="nav-link hover:text-glow transition-colors duration-300" data-section="book">The Book</a></li>
-                    <li><a href="#reviews" class="nav-link hover:text-glow transition-colors duration-300" data-section="reviews">Reviews</a></li>
-                    <li><a href="#about" class="nav-link hover:text-glow transition-colors duration-300" data-section="about">About</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-glow transition-colors duration-300" data-section="contact">Contact</a></li>
-                </ul>
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-white h-8 w-8" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle mobile menu">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+                </span>
+                <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-[#00bfff]/10 text-[#00bfff] border border-[#00bfff]/20">
+                    Author Hub
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-[#94a3b8]">
+                <a href="index.html#books" class="hover:text-white transition-colors">Books</a>
+                <a href="index.html#about" class="hover:text-white transition-colors">About</a>
+                <a href="index.html#frameworks" class="hover:text-white transition-colors">Frameworks</a>
+                <a href="aether_book.html" class="text-[#00bfff] font-bold hover:underline transition-colors flex items-center gap-1">Aether (Novel) →</a>
+                <a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="text-[#f59e0b] hover:underline transition-colors flex items-center gap-1">P2E Bible ↗</a>
+                <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
             </nav>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-                <ul class="space-y-4 text-sm uppercase tracking-wider">
-                    <li><a href="#book" class="nav-link block hover:text-glow transition-colors duration-300" data-section="book">The Book</a></li>
-                    <li><a href="#reviews" class="nav-link block hover:text-glow transition-colors duration-300" data-section="reviews">Reviews</a></li>
-                    <li><a href="#about" class="nav-link block hover:text-glow transition-colors duration-300" data-section="about">About</a></li>
-                    <li><a href="#contact" class="nav-link block hover:text-glow transition-colors duration-300" data-section="contact">Contact</a></li>
-                </ul>
-            </div>
+
+            <a href="#presale" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#00bfff] to-[#3b82f6] text-[#080b12] font-black text-xs uppercase tracking-wider hover:scale-105 transition-transform shadow-[0_0_15px_rgba(0,191,255,0.3)]">
+                Pre-Order Aether
+            </a>
         </div>
     </header>
 

@@ -119,15 +119,32 @@
 </head>
 
 <body class="antialiased">
-    <!-- Author Hub Header Banner -->
-    <div class="bg-gray-950 border-b border-gray-800 text-sm py-3.5 px-6 text-gray-300 flex items-center justify-between font-inter z-50 relative">
-        <a href="index.html" class="text-blue-400 hover:text-blue-200 font-bold flex items-center gap-1 transition-colors">
-            ← Back to Sean Sandoval Author Hub (seansandoval.com)
-        </a>
-        <span class="hidden md:inline-block text-xs uppercase tracking-widest text-gray-400 font-mono">
-            Aether Novel Pre-Order &amp; Showcase Page
-        </span>
-    </div>
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#080b12]/90 backdrop-blur-xl border-b border-[#1c2535]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <span class="font-orbitron text-xl font-black text-white tracking-wider group-hover:text-[#00bfff] transition-colors">
+                    SEAN SANDOVAL
+                </span>
+                <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-[#00bfff]/10 text-[#00bfff] border border-[#00bfff]/20">
+                    Author Hub
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-[#94a3b8]">
+                <a href="index.html#books" class="hover:text-white transition-colors">Books</a>
+                <a href="index.html#about" class="hover:text-white transition-colors">About</a>
+                <a href="index.html#frameworks" class="hover:text-white transition-colors">Frameworks</a>
+                <a href="aether_book.html" class="text-[#00bfff] font-bold hover:underline transition-colors flex items-center gap-1">Aether (Novel) →</a>
+                <a href="https://p2ebible.com" target="_blank" rel="noopener noreferrer" class="text-[#f59e0b] hover:underline transition-colors flex items-center gap-1">P2E Bible ↗</a>
+                <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <a href="#presale" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#00bfff] to-[#3b82f6] text-[#080b12] font-black text-xs uppercase tracking-wider hover:scale-105 transition-transform shadow-[0_0_15px_rgba(0,191,255,0.3)]">
+                Pre-Order Aether
+            </a>
+        </div>
+    </header>
     <!-- Matrix Rain Effect for Entire Site -->
     <div id="matrix-rain" class="matrix-rain" style="display: block !important; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999 !important; opacity: 0.2; overflow: hidden; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.2; color: #00BFFF;">
         <!-- JavaScript will populate this with falling characters -->
